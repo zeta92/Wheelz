@@ -4,7 +4,6 @@ import 'firebase/database';
 import 'firebase/firestore';
 import 'firebase/performance'
 
-
 const config = {
     apiKey: "AIzaSyCj9wGFdtz8x1A1JVF8TpJxoawj1VZziJM",
     authDomain: "coches-a1f6a.firebaseapp.com",
