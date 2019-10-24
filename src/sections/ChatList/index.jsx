@@ -18,7 +18,7 @@ class ChatList extends React.Component {
             connection.firestore().collection('users').doc(this.props.userId).collection('chats').onSnapshot((snapshot)=>{
                 snapshot.docs.forEach((chatSnap)=>{
                     chatSnap.data().chat.get().then((chat)=>{
-                        chat.data().users.filter((u) => u.id !== this.props.userId ).forEach((userSnap)=>{
+                        chat.data().users.filter( u => u.id !== this.props.userId ).forEach((userSnap)=>{
                             userSnap.get().then((user)=>{
                                 console.log(user.data())
                                 this.setState({
@@ -39,6 +39,7 @@ class ChatList extends React.Component {
             })
         })
     }
+
 
 
     render(){

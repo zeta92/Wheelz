@@ -72,7 +72,7 @@ module.exports = {
     },
     devServer: {
         port: 8080,
-        host: '0.0.0.0',
+        host: 'localhost',
         proxy: {
             '/mailers': {
                 target: 'https://web-utils.waveapplication.com',
